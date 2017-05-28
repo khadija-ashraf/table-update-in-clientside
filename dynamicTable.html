@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="functions.js"></script>
+		
+		<style type="text/css">
+			.tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa;}
+			.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;}
+			.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#f38630;}
+			.tg .tg-yw4l{vertical-align:top}
+			.input-md {margin-bottom:20px;  width: 300px;}
+			fieldset { width: 40%;}			
+			@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+		</style>
+
+    </head>
+	
+    <body>
+		<form id="frmNews" class="form-horizontal">
+			<fieldset>
+				<!-- Form Name -->
+				<legend>News</legend>
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="txtDate">Date</label>
+					<div class="col-md-4">
+						<input id="txtDate" name="txtDate" placeholder="Enter Date" class="form-control input-md" type="text" style="margin-bottom:20px">
+						</div>
+					</div>
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="txtTitle">Title</label>
+						<div class="col-md-5">
+							<input id="txtTitle" name="txtTitle" placeholder="Enter Title" class="form-control input-md" type="text">
+						</div>
+						</div>
+						<!-- Textarea -->
+						<div class="form-group">
+							<label class="col-md-4 control-label" for="txtDescription">Description</label>
+							<div class="col-md-4">
+								<input id="txtDescription" name="txtDescription" placeholder="Enter Description" class="form-control input-md" type="text">							
+							</div>
+					</div>
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="singlebutton"></label>
+						<div class="col-md-4">
+							<input type="Submit" value="Save" id="btnSave"/>					
+						</div>
+					</div>
+			</fieldset>
+		</form>
+		
+		<div class="tg-wrap">
+			<table  class="tg" id="tblList"></table>
+		</div>
+    </body>
+</html>
+
